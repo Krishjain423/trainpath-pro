@@ -21,8 +21,8 @@ const kpiCards = [
     icon: Clock,
     trend: "-12.5%",
     trendUp: false,
-    color: "text-warning",
-    bgColor: "bg-warning/10"
+    color: "text-primary",
+    bgColor: "bg-primary/10"
   },
   {
     title: "Track Utilization",
@@ -31,8 +31,8 @@ const kpiCards = [
     icon: Activity,
     trend: "+3.8%",
     trendUp: true,
-    color: "text-success",
-    bgColor: "bg-success/10"
+    color: "text-primary",
+    bgColor: "bg-primary/10"
   },
   {
     title: "Safety Index",
@@ -41,8 +41,8 @@ const kpiCards = [
     icon: Shield,
     trend: "+0.5%",
     trendUp: true,
-    color: "text-success",
-    bgColor: "bg-success/10"
+    color: "text-primary",
+    bgColor: "bg-primary/10"
   }
 ];
 
@@ -77,7 +77,7 @@ export const KPICards = () => {
                 className={`flex items-center gap-1 ${
                   kpi.trendUp 
                     ? 'text-success border-success bg-success/10' 
-                    : 'text-destructive border-destructive bg-destructive/10'
+                    : 'text-accent border-accent bg-accent/10'
                 }`}
               >
                 {kpi.trendUp ? (

@@ -19,9 +19,9 @@ export const MapVisualization = () => {
           {/* Railway Track Layout */}
           <div className="absolute inset-4">
             {/* Main Track Lines */}
-            <div className="absolute top-1/4 left-0 right-0 h-1 bg-railway-track rounded-full"></div>
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-railway-track rounded-full"></div>
-            <div className="absolute top-3/4 left-0 right-0 h-1 bg-railway-track rounded-full"></div>
+            <div className="absolute top-1/4 left-0 right-0 h-1 bg-primary rounded-full"></div>
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-primary rounded-full"></div>
+            <div className="absolute top-3/4 left-0 right-0 h-1 bg-primary rounded-full"></div>
             
             {/* Junction Points */}
             <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse-glow"></div>
@@ -41,57 +41,57 @@ export const MapVisualization = () => {
               <span className="text-xs text-muted-foreground mt-1">Station C</span>
             </div>
             
-            {/* Moving Trains */}
+            {/* Moving Trains - Simplified Colors */}
             <div className="absolute top-1/4 left-1/4 flex items-center gap-1 animate-train-move" style={{ animationDuration: '30s' }}>
-              <Train className="h-4 w-4 text-railway-express" />
-              <span className="text-xs bg-railway-express text-white px-1 rounded">12345</span>
+              <Train className="h-4 w-4 text-primary" />
+              <span className="text-xs bg-primary text-primary-foreground px-1 rounded">12345</span>
             </div>
             
             <div className="absolute top-1/2 left-1/3 flex items-center gap-1" style={{ animationDelay: '5s' }}>
-              <Train className="h-4 w-4 text-railway-freight" />
-              <span className="text-xs bg-railway-freight text-white px-1 rounded">67890</span>
+              <Train className="h-4 w-4 text-muted-foreground" />
+              <span className="text-xs bg-muted text-muted-foreground px-1 rounded">67890</span>
             </div>
             
             <div className="absolute top-3/4 left-1/5 flex items-center gap-1 animate-train-move" style={{ animationDuration: '25s', animationDelay: '10s' }}>
-              <Train className="h-4 w-4 text-railway-vip" />
-              <span className="text-xs bg-railway-vip text-white px-1 rounded">11111</span>
+              <Train className="h-4 w-4 text-accent" />
+              <span className="text-xs bg-accent text-accent-foreground px-1 rounded">11111</span>
             </div>
             
-            {/* Signal Points */}
+            {/* Signal Points - Simplified */}
             <div className="absolute top-1/4 right-1/4">
-              <div className="w-2 h-2 bg-railway-clear rounded-full animate-signal-blink"></div>
-              <span className="text-xs text-railway-clear">Clear</span>
+              <div className="w-2 h-2 bg-success rounded-full animate-signal-blink"></div>
+              <span className="text-xs text-success">Clear</span>
             </div>
             
             <div className="absolute top-1/2 right-1/3">
-              <div className="w-2 h-2 bg-railway-caution rounded-full animate-signal-blink"></div>
-              <span className="text-xs text-railway-caution">Caution</span>
+              <div className="w-2 h-2 bg-warning rounded-full animate-signal-blink"></div>
+              <span className="text-xs text-warning">Caution</span>
             </div>
             
             {/* Congestion Alert */}
             <div className="absolute top-3/4 left-2/3 flex items-center gap-1 animate-scale-pulse">
-              <AlertCircle className="h-4 w-4 text-destructive" />
-              <span className="text-xs text-destructive bg-destructive/10 px-1 rounded">Congestion</span>
+              <AlertCircle className="h-4 w-4 text-accent" />
+              <span className="text-xs text-accent bg-accent/10 px-1 rounded">Congestion</span>
             </div>
           </div>
           
-          {/* Legend */}
+          {/* Simplified Legend */}
           <div className="absolute bottom-2 left-2 bg-card/90 p-2 rounded border border-border">
             <div className="grid grid-cols-2 gap-2 text-xs">
               <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-railway-express rounded"></div>
+                <div className="w-2 h-2 bg-primary rounded"></div>
                 <span>Express</span>
               </div>
               <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-railway-freight rounded"></div>
+                <div className="w-2 h-2 bg-muted rounded"></div>
                 <span>Freight</span>
               </div>
               <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-railway-vip rounded"></div>
+                <div className="w-2 h-2 bg-accent rounded"></div>
                 <span>VIP</span>
               </div>
               <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-railway-local rounded"></div>
+                <div className="w-2 h-2 bg-success rounded"></div>
                 <span>Local</span>
               </div>
             </div>

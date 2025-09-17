@@ -15,17 +15,17 @@ export const PerformanceChart = () => {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="space-y-4">
-          <div className="flex justify-between text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-primary rounded-sm" />
-              <span className="text-muted-foreground">Trains Processed</span>
+          <div className="space-y-4">
+            <div className="flex justify-between text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-primary rounded-sm" />
+                <span className="text-muted-foreground">Trains Processed</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-accent rounded-sm" />
+                <span className="text-muted-foreground">Delays</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-warning rounded-sm" />
-              <span className="text-muted-foreground">Delays</span>
-            </div>
-          </div>
           
           <div className="space-y-3">
             {mockPerformanceData.map((data, index) => (
@@ -43,7 +43,7 @@ export const PerformanceChart = () => {
                     }}
                   />
                   <div 
-                    className="bg-gradient-warning rounded-sm transition-all duration-1000 ease-out"
+                    className="bg-gradient-danger rounded-sm transition-all duration-1000 ease-out"
                     style={{ 
                       width: `${(data.delays / maxDelays) * 30}%`,
                       animationDelay: `${index * 100 + 200}ms`
@@ -63,7 +63,7 @@ export const PerformanceChart = () => {
                 <div className="text-xs text-muted-foreground">Total Processed</div>
               </div>
               <div>
-                <div className="text-lg font-bold text-warning">
+                <div className="text-lg font-bold text-accent">
                   {mockPerformanceData.reduce((sum, d) => sum + d.delays, 0)}
                 </div>
                 <div className="text-xs text-muted-foreground">Total Delays</div>
