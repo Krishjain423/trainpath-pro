@@ -31,6 +31,14 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -57,6 +65,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Railway-specific colors
+        railway: {
+          express: "hsl(var(--express))",
+          freight: "hsl(var(--freight))",
+          local: "hsl(var(--local))",
+          vip: "hsl(var(--vip))",
+          track: "hsl(var(--track-line))",
+          clear: "hsl(var(--signal-clear))",
+          caution: "hsl(var(--signal-caution))",
+          danger: "hsl(var(--signal-danger))",
+        },
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-success": "var(--gradient-success)",
+        "gradient-warning": "var(--gradient-warning)",
+        "gradient-danger": "var(--gradient-danger)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +105,46 @@ export default {
             height: "0",
           },
         },
+        // Railway-specific animations
+        "train-move": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100vw)" },
+        },
+        "signal-blink": {
+          "0%, 50%": { opacity: "1" },
+          "51%, 100%": { opacity: "0.3" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { 
+            boxShadow: "0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))" 
+          },
+          "50%": { 
+            boxShadow: "0 0 2px hsl(var(--primary)), 0 0 5px hsl(var(--primary)), 0 0 8px hsl(var(--primary))" 
+          },
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "scale-pulse": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "train-move": "train-move 20s linear infinite",
+        "signal-blink": "signal-blink 2s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "fade-in-up": "fade-in-up 0.3s ease-out",
+        "scale-pulse": "scale-pulse 2s ease-in-out infinite",
       },
     },
   },
