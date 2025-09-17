@@ -9,17 +9,17 @@ const getStatusColor = (status: string) => {
     case 'Running': return 'bg-success text-success-foreground';
     case 'Delayed': return 'bg-warning text-warning-foreground';
     case 'Halted': return 'bg-destructive text-destructive-foreground';
-    case 'Rerouted': return 'bg-primary text-primary-foreground';
+    case 'Rerouted': return 'bg-accent text-accent-foreground';
     default: return 'bg-muted text-muted-foreground';
   }
 };
 
 const getPriorityColor = (priority: string) => {
   switch (priority) {
-    case 'Express': return 'bg-railway-express text-white border-railway-express';
-    case 'VIP': return 'bg-railway-vip text-white border-railway-vip';
-    case 'Freight': return 'bg-railway-freight text-white border-railway-freight';
-    case 'Local': return 'bg-railway-local text-white border-railway-local';
+    case 'Express': return 'bg-railway-express text-primary-foreground border-railway-express';
+    case 'VIP': return 'bg-railway-vip text-destructive-foreground border-railway-vip';
+    case 'Freight': return 'bg-railway-freight text-orange-900 border-railway-freight';
+    case 'Local': return 'bg-railway-local text-success-foreground border-railway-local';
     default: return 'bg-muted text-muted-foreground';
   }
 };

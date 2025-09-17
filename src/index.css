@@ -18,9 +18,9 @@ All colors MUST be HSL for professional railway control interface.
     --popover: 220 13% 11%;
     --popover-foreground: 220 9% 95%;
 
-    /* Railway Blue - Primary control color */
-    --primary: 214 95% 50%;
-    --primary-foreground: 220 13% 9%;
+    /* Indian Railways Deep Blue - Primary control color */
+    --primary: 210 100% 25%;
+    --primary-foreground: 210 17% 95%;
 
     /* Railway Status Colors */
     --secondary: 220 13% 13%;
@@ -29,51 +29,52 @@ All colors MUST be HSL for professional railway control interface.
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 70%;
 
-    --accent: 220 13% 15%;
+    /* Railway Red Accent */
+    --accent: 0 75% 45%;
     --accent-foreground: 220 9% 95%;
 
-    /* Railway Signal Colors */
-    --success: 142 76% 36%;  /* Railway Green */
+    /* Consistent Status Indicators */
+    --success: 120 60% 40%;  /* On Time - Green */
     --success-foreground: 220 13% 9%;
     
-    --warning: 43 96% 56%;   /* Railway Amber */
+    --warning: 45 100% 50%;   /* Minor Delay - Yellow */
     --warning-foreground: 220 13% 9%;
     
-    --destructive: 0 84% 60%; /* Railway Red */
+    --destructive: 0 75% 45%; /* Major Delay/Critical - Railway Red */
     --destructive-foreground: 220 9% 95%;
 
     --border: 220 13% 20%;
     --input: 220 13% 15%;
-    --ring: 214 95% 50%;
+    --ring: 210 100% 25%;
 
     --radius: 0.5rem;
 
     /* Railway Dashboard Specific */
-    --express: 266 85% 58%;      /* Purple for Express trains */
-    --freight: 25 95% 53%;       /* Orange for Freight */
-    --local: 142 76% 36%;        /* Green for Local */
-    --vip: 320 65% 52%;          /* Pink for VIP */
+    --express: 210 100% 25%;     /* Deep Blue for Express trains */
+    --freight: 25 75% 45%;       /* Muted Orange for Freight */
+    --local: 120 60% 40%;        /* Green for Local */
+    --vip: 0 75% 45%;            /* Railway Red for VIP */
     
-    --track-line: 214 95% 50%;   /* Blue track lines */
-    --signal-clear: 142 76% 36%; /* Clear signal */
-    --signal-caution: 43 96% 56%; /* Caution signal */
-    --signal-danger: 0 84% 60%;   /* Danger signal */
+    --track-line: 210 100% 25%;  /* Deep Blue track lines */
+    --signal-clear: 120 60% 40%; /* Clear signal - Green */
+    --signal-caution: 45 100% 50%; /* Caution signal - Yellow */
+    --signal-danger: 0 75% 45%;   /* Danger signal - Railway Red */
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 95% 50%), hsl(214 95% 40%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 26%));
-    --gradient-warning: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 46%));
-    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 50%));
+    /* Simplified Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 25%), hsl(210 100% 20%));
+    --gradient-success: linear-gradient(135deg, hsl(120 60% 40%), hsl(120 60% 35%));
+    --gradient-warning: linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 45%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 75% 45%), hsl(0 75% 40%));
     
     /* Control Panel Specific */
     --sidebar-background: 220 13% 8%;
     --sidebar-foreground: 220 9% 85%;
-    --sidebar-primary: 214 95% 50%;
-    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-primary: 210 100% 25%;
+    --sidebar-primary-foreground: 210 17% 95%;
     --sidebar-accent: 220 13% 12%;
     --sidebar-accent-foreground: 220 9% 95%;
     --sidebar-border: 220 13% 18%;
-    --sidebar-ring: 214 95% 50%;
+    --sidebar-ring: 210 100% 25%;
   }
 
   .dark {
@@ -84,27 +85,27 @@ All colors MUST be HSL for professional railway control interface.
     --card-foreground: 220 9% 95%;
     --popover: 220 13% 11%;
     --popover-foreground: 220 9% 95%;
-    --primary: 214 95% 50%;
-    --primary-foreground: 220 13% 9%;
+    --primary: 210 100% 25%;
+    --primary-foreground: 210 17% 95%;
     --secondary: 220 13% 13%;
     --secondary-foreground: 220 9% 85%;
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 70%;
-    --accent: 220 13% 15%;
+    --accent: 0 75% 45%;
     --accent-foreground: 220 9% 95%;
-    --destructive: 0 84% 60%;
+    --destructive: 0 75% 45%;
     --destructive-foreground: 220 9% 95%;
     --border: 220 13% 20%;
     --input: 220 13% 15%;
-    --ring: 214 95% 50%;
+    --ring: 210 100% 25%;
     --sidebar-background: 220 13% 8%;
     --sidebar-foreground: 220 9% 85%;
-    --sidebar-primary: 214 95% 50%;
-    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-primary: 210 100% 25%;
+    --sidebar-primary-foreground: 210 17% 95%;
     --sidebar-accent: 220 13% 12%;
     --sidebar-accent-foreground: 220 9% 95%;
     --sidebar-border: 220 13% 18%;
-    --sidebar-ring: 214 95% 50%;
+    --sidebar-ring: 210 100% 25%;
   }
 }
 

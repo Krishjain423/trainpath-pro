@@ -33,9 +33,9 @@ export const AlertsPanel = () => {
         <CardTitle className="flex items-center gap-2 text-card-foreground">
           <AlertTriangle className="h-5 w-5 text-warning" />
           System Alerts
-          <Badge variant="outline" className="ml-auto bg-destructive/10 text-destructive border-destructive">
-            {activeAlerts.length} Active
-          </Badge>
+            <Badge variant="outline" className="ml-auto bg-accent/10 text-accent border-accent">
+              {activeAlerts.length} Active
+            </Badge>
         </CardTitle>
       </CardHeader>
       <CardContent>

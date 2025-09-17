@@ -16,16 +16,25 @@ export const DashboardLayout = () => {
         <AppSidebar />
         
         <div className="flex-1 flex flex-col">
+          {/* Junction Identification Banner */}
+          <div className="bg-gradient-primary border-b-2 border-primary/20 px-6 py-4">
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <Activity className="h-7 w-7 text-primary-foreground animate-pulse-glow" />
+                <div>
+                  <h1 className="text-2xl font-bold text-primary-foreground">
+                    📍 Mumbai Central Junction
+                  </h1>
+                  <p className="text-sm text-primary-foreground/80">Section Control Dashboard</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Header */}
-          <header className="h-16 border-b border-border bg-card flex items-center justify-between px-6">
+          <header className="h-12 border-b border-border bg-card flex items-center justify-between px-6">
             <div className="flex items-center gap-4">
               <SidebarTrigger />
-              <div className="flex items-center gap-2">
-                <Activity className="h-6 w-6 text-primary animate-pulse-glow" />
-                <h1 className="text-xl font-semibold text-foreground">
-                  Railway Traffic Control Dashboard
-                </h1>
-              </div>
             </div>
             
             <div className="flex items-center gap-3">
